@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from './Toggle.module.scss';
+import styles from './Counter.module.scss';
 
 const Counter = () => {
   const [clickCount, setClickCount] = useState(0);
