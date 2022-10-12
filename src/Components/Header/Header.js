@@ -1,7 +1,7 @@
-import styles from './App.module.scss';
 import logo from './logo.svg';
+import styles from './Header.module.scss';
 
-function App() {
+function Header() {
   return (
     <div className={styles.App}>
       <header className={styles.appHeader}>
@@ -22,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+export default Header;
