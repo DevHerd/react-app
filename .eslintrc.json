@@ -20,6 +20,13 @@
     ],
     "rules": {
         "react/react-in-jsx-scope": "off",
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/function-component-definition": [
+            "error",
+            {
+                "namedComponents": ["function-declaration", "arrow-function"],
+                "unnamedComponents": "arrow-function"
+            }
+        ]
     }
 }
