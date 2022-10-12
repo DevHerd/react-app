@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.module.scss';
 // import Header from './Components/Header/Header';
-import { Header } from './Components/layout';
+import { Header, Counter } from './Components/layout';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Counter />
     <Header />
   </React.StrictMode>
 );
