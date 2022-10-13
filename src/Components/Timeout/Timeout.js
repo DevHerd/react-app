@@ -8,7 +8,9 @@ const Timeout = () => {
   const timeIntervalHandler = () => setToggle(!toggle);
   
   useEffect(() => {
-    setTimeout(setTimeoutValue(timeoutValue + 1), 1000);
+    setTimeout(() => {
+      setTimeoutValue(timeoutValue + 1);
+    }, 1000);
   }, []);
 
   useEffect(() => {
