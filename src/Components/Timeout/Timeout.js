@@ -6,13 +6,23 @@ const Timeout = () => {
   const [timeoutValue, setTimeoutValue] = useState(0);
   const [toggle, setToggle] = useState(false);
   const timeIntervalHandler = () => setToggle(!toggle);
-  
+  const resetTimeHandler = () => {
+    if(timeoutValue > 1) {
+      setTimeoutValue(0);
+    }
+
+    if(intervalValue > 1) {
+      setIntervalValue(0);
+    }
+  }
+
   useEffect(() => {
     setTimeout(setTimeoutValue(timeoutValue + 1), 1000);
   }, []);
 
   useEffect(() => {
     let timeInterval;
+      
     if(toggle) {
       timeInterval = setInterval(() => {
         setIntervalValue(intervalValue + 1);
@@ -28,6 +38,7 @@ const Timeout = () => {
         <h1>Timeout Value {timeoutValue}</h1>
         <div className={styles.buttonWrapper}>
             <button type="button" onClick={timeIntervalHandler}>{toggle ? 'Pause' : 'Start'} Time</button>
+            <button type="button" onClick={resetTimeHandler}>Reset Time</button>
         </div>
     </section>
   )
