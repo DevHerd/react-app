@@ -1,5 +1,5 @@
 const Card = props => {
-  const { children, className } = props;
+  const { children, className  } = props;
 
   return(
         <div className={className}>

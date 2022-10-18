@@ -16,12 +16,12 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "sort-destructure-keys"
     ],
     "rules": {
-        "react/prop-types": 0,
         "indent": 2,
-        "react/react-in-jsx-scope": "off",
+        "react/prop-types": 0,
         "react/jsx-sort-props": [2],
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "react/function-component-definition": [
@@ -30,6 +30,8 @@
                 "namedComponents": ["function-declaration", "arrow-function"],
                 "unnamedComponents": "arrow-function"
             }
-        ]
+        ],
+        "react/react-in-jsx-scope": "off",
+        "sort-destructure-keys/sort-destructure-keys": [2, { "caseSensitive": false }]
     }
 }
