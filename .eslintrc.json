@@ -19,6 +19,7 @@
         "react"
     ],
     "rules": {
+        "react/prop-types": 0,
         "indent": 2,
         "react/react-in-jsx-scope": "off",
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],

@@ -1,16 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.module.scss';
-import { Header, Counter, Toggle, Modal, Timeout } from './Components/layout';
+import { Header, Counter, Toggle, Modal, Timeout, Card, Grid } from './Components/layout';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Counter />
-    <Toggle />
-    <Modal />
-    <Timeout />
+    <Grid>
+      <Card>
+        <Counter />
+      </Card>
+      <Card>
+        <Toggle />
+      </Card>
+      <Card>
+        <Modal />
+      </Card>
+      <Card>
+        <Timeout />
+      </Card>
+      <Card>
+        <h1>children</h1>
+      </Card>
+    </Grid>
     <Header />
   </React.StrictMode>
 );
