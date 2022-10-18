@@ -6,8 +6,7 @@
     "extends": [
         "plugin:react/recommended",
         "plugin:react-hooks/recommended",
-        "airbnb",
-        "prettier"
+        "airbnb"
     ],
     "overrides": [
     ],
@@ -16,11 +15,16 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "simple-import-sort",
+        "sort-destructure-keys"
     ],
     "rules": {
-        "indent": 2,
-        "react/react-in-jsx-scope": "off",
+        "react/prop-types": 0,
+        "linebreak-style": 0,
+        "react/jsx-sort-props": [2],
+        "react/jsx-max-props-per-line": [1, { "maximum": 1}],
+        "react/jsx-props-no-spreading": "off",
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "react/function-component-definition": [
             "error",
@@ -28,6 +32,9 @@
                 "namedComponents": ["function-declaration", "arrow-function"],
                 "unnamedComponents": "arrow-function"
             }
-        ]
+        ],
+        "react/react-in-jsx-scope": "off",
+        "simple-import-sort/imports": "error",
+        "sort-destructure-keys/sort-destructure-keys": [2, { "caseSensitive": false }]
     }
 }
