@@ -1,14 +1,14 @@
-import Card from "../Card/Card";
-import styles from "./Grid.module.scss";
+import Card from '../Card/Card';
+import styles from './Grid.module.scss';
 
-const Grid = props => {
+const Grid = (props) => {
   const { children } = props;
 
-  return(
+  return (
     <section className={styles.section}>
-       <Card className={styles.grid}>{children}</Card>
+      <Card className={styles.grid}>{children}</Card>
     </section>
-  )
-}
+  );
+};
 
 export default Grid;

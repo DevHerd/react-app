@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 import styles from './Timeout.module.scss';
 
@@ -8,14 +8,14 @@ const Timeout = () => {
   const [toggle, setToggle] = useState(false);
   const timeIntervalHandler = () => setToggle(!toggle);
   const resetTimeHandler = () => {
-    if(timeoutValue > 1) {
+    if (timeoutValue > 1) {
       setTimeoutValue(0);
     }
 
-    if(intervalValue > 1) {
+    if (intervalValue > 1) {
       setIntervalValue(0);
     }
-  }
+  };
 
   useEffect(() => {
     setTimeout(setTimeoutValue(timeoutValue + 1), 1000);
@@ -23,11 +23,11 @@ const Timeout = () => {
 
   useEffect(() => {
     let timeInterval;
-      
-    if(toggle) {
+
+    if (toggle) {
       timeInterval = setInterval(() => {
         setIntervalValue(intervalValue + 1);
-      }, 1000); 
+      }, 1000);
     }
 
     return () => clearTimeout(timeInterval);
@@ -35,14 +35,31 @@ const Timeout = () => {
 
   return (
     <section>
-        <h1>Interval Value {intervalValue}</h1>
-        <h1>Timeout Value {timeoutValue}</h1>
-        <div className={styles.buttonWrapper}>
-            <button onClick={timeIntervalHandler} type="button">{toggle ? 'Pause' : 'Start'} Time</button>
-            <button onClick={resetTimeHandler} type="button">Reset Time</button>
-        </div>
+      <h1>
+        Interval Value
+        {intervalValue}
+      </h1>
+      <h1>
+        Timeout Value
+        {timeoutValue}
+      </h1>
+      <div className={styles.buttonWrapper}>
+        <button
+          onClick={timeIntervalHandler}
+          type="button"
+        >
+          {toggle ? 'Pause' : 'Start'}
+          Time
+        </button>
+        <button
+          onClick={resetTimeHandler}
+          type="button"
+        >
+          Reset Time
+        </button>
+      </div>
     </section>
-  )
-}
+  );
+};
 
 export default Timeout;

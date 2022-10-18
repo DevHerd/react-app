@@ -5,9 +5,15 @@ function Header() {
   return (
     <div className={styles.App}>
       <header className={styles.appHeader}>
-        <img alt="logo" className={styles.appLogo} src={logo} />
+        <img
+          alt="logo"
+          className={styles.appLogo}
+          src={logo}
+        />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit
+          <code>src/App.js</code>
+          and save to reload.
         </p>
         <a
           className={styles.appLink}
