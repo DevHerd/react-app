@@ -11,7 +11,7 @@ const Toggle = () => {
         <div>Toggle Status: {toggle.toString()}</div>
         {toggle && <h2>Showing</h2>}
         <div className={styles.buttonWrapper}>
-          <button type="button" className={styles.toggleButton} onClick={onClickHandler}>Toggle Button</button>
+          <button className={styles.toggleButton} onClick={onClickHandler} type="button">Toggle Button</button>
         </div>
     </section>
   );

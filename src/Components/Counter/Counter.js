@@ -12,11 +12,11 @@ const Counter = () => {
         <h2>Counter</h2>
         <div>I was clicked: {clickCount}</div>
         <div className={styles.buttonWrapper}>
-          <button type="button" className={styles.counterButton} onClick={onClickCounterHandler}>{clickCount > 0 ? 'Increase' : 'Counter'}</button>
+          <button className={styles.counterButton} onClick={onClickCounterHandler} type="button">{clickCount > 0 ? 'Increase' : 'Counter'}</button>
           {clickCount > 0 && (
             <>
-              <button type="button" className={styles.counterButton} onClick={onClickDecreaseCounterHandler}>Decrease</button>
-              <button type="button" className={styles.counterButton} onClick={onClickResetHandler}>Reset</button>
+              <button className={styles.counterButton} onClick={onClickDecreaseCounterHandler} type="button">Decrease</button>
+              <button className={styles.counterButton} onClick={onClickResetHandler} type="button">Reset</button>
             </>
           )}
         </div>

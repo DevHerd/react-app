@@ -9,13 +9,13 @@ const Modal = () => {
     <section>
         <h2>Modal</h2>
         <div className={styles.buttonWrapper}>
-            <button type="button" onClick={onClickHandler}>{toggle ? 'Hide' : 'Show'} Modal</button>
+            <button onClick={onClickHandler} type="button">{toggle ? 'Hide' : 'Show'} Modal</button>
         </div>
 
         {toggle && (
             <div className={styles.modal}>
                 Im showing the Modal right now!
-                <button type="button" className={styles.modalClose} onClick={closeClickHandler}>Close</button>
+                <button className={styles.modalClose} onClick={closeClickHandler} type="button">Close</button>
             </div>
         )}
     </section>
