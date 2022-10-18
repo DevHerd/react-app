@@ -17,6 +17,7 @@
     },
     "plugins": [
         "react",
+        "simple-import-sort",
         "sort-destructure-keys"
     ],
     "rules": {
@@ -32,6 +33,7 @@
             }
         ],
         "react/react-in-jsx-scope": "off",
+        "simple-import-sort/imports": "error",
         "sort-destructure-keys/sort-destructure-keys": [2, { "caseSensitive": false }]
     }
 }

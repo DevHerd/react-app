@@ -1,7 +1,9 @@
+import './index.module.scss';
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.module.scss';
-import { Header, Counter, Toggle, Modal, Timeout, Card, Grid } from './Components/layout';
+
+import { Card, Counter, Grid,Header, Modal, Timeout, Toggle } from './Components/layout';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

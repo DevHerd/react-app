@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import styles from './Timeout.module.scss';
 
 const Timeout = () => {
