@@ -19,6 +19,7 @@ const Timeout = () => {
 
   useEffect(() => {
     setTimeout(setTimeoutValue(timeoutValue + 1), 1000);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
