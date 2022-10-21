@@ -4,7 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import {
-  Card, Counter, Grid, Header, Modal, Timeout, Toggle,
+  Card, Counter, Grid, Modal, Timeout, Toggle,
 } from './Components/layout';
 import reportWebVitals from './reportWebVitals';
 
@@ -28,7 +28,6 @@ root.render(
         <h1>children</h1>
       </Card>
     </Grid>
-    <Header />
   </React.StrictMode>,
 );
 

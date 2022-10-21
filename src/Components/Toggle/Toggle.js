@@ -7,7 +7,7 @@ const Toggle = () => {
   const onClickHandler = () => setToggle(!toggle);
 
   return (
-    <section>
+    <div>
       <h2>Toggle</h2>
       <div>
         {`Toggle Status: ${toggle.toString()}`}
@@ -22,7 +22,7 @@ const Toggle = () => {
           Toggle Button
         </button>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -27,14 +27,18 @@ button {
  font-size: 15px;
  cursor: pointer;
 
- border: 1px solid #000000;
+ border: 2px solid #000000;
  background-color: #000000;
 
  transition: all 0.2s ease;
 
  &:hover {
-  color: #000000;
+  color: #FFFFFF;
 
   background-color: transparent;
  }
+}
+
+h2 {
+    margin: 0;
 }

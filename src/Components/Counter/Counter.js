@@ -9,7 +9,7 @@ const Counter = () => {
   const onClickDecreaseCounterHandler = () => setClickCount(clickCount - 1);
 
   return (
-    <section>
+    <div>
       <h2>Counter</h2>
       <div>
         {`I was clicked: ${clickCount}`}
@@ -41,7 +41,7 @@ const Counter = () => {
         </>
         )}
       </div>
-    </section>
+    </div>
   );
 };
 

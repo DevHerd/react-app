@@ -35,7 +35,7 @@ const Timeout = () => {
   }, [intervalValue, toggle]);
 
   return (
-    <section>
+    <div>
       <h1>
         {`Interval Value ${intervalValue}`}
       </h1>
@@ -56,7 +56,7 @@ const Timeout = () => {
           Reset Time
         </button>
       </div>
-    </section>
+    </div>
   );
 };
 

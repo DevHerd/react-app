@@ -7,7 +7,7 @@ const Modal = () => {
   const onClickHandler = () => setToggle(!toggle);
   const closeClickHandler = () => setToggle(false);
   return (
-    <section>
+    <div>
       <h2>Modal</h2>
       <div className={styles.buttonWrapper}>
         <button
@@ -29,7 +29,7 @@ const Modal = () => {
           </button>
         </div>
       )}
-    </section>
+    </div>
   );
 };
 
