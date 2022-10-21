@@ -11,34 +11,32 @@ const Counter = () => {
   return (
     <div>
       <h2>Counter</h2>
-      <div>
-        {`I was clicked: ${clickCount}`}
-      </div>
+      <div>{`I was clicked: ${clickCount}`}</div>
       <div className={styles.buttonWrapper}>
         <button
           className={styles.counterButton}
           onClick={onClickCounterHandler}
-          type="button"
+          type='button'
         >
           {clickCount > 0 ? 'Increase' : 'Counter'}
         </button>
         {clickCount > 0 && (
-        <>
-          <button
-            className={styles.counterButton}
-            onClick={onClickDecreaseCounterHandler}
-            type="button"
-          >
-            Decrease
-          </button>
-          <button
-            className={styles.counterButton}
-            onClick={onClickResetHandler}
-            type="button"
-          >
-            Reset
-          </button>
-        </>
+          <>
+            <button
+              className={styles.counterButton}
+              onClick={onClickDecreaseCounterHandler}
+              type='button'
+            >
+              Decrease
+            </button>
+            <button
+              className={styles.counterButton}
+              onClick={onClickResetHandler}
+              type='button'
+            >
+              Reset
+            </button>
+          </>
         )}
       </div>
     </div>

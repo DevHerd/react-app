@@ -3,32 +3,9 @@
     "singleQuote": true,
     "trailingComma": "all",
     "endOfLine": "auto",
-    "jsxSingleQuote": false,
+    "jsxSingleQuote": true,
     "arrowParens": "always",
     "bracketSpacing": true,
-    "printWidth": 100,
-    "tabWidth": 2,
-    "overrides": [
-        {
-            "files": [
-                "**/*.css",
-                "**/*.sass",
-                "**/*.scss",
-                "**/*.html"
-            ],
-            "options": {
-                "singleQuote": false
-            }
-        },
-        {
-            "files": [
-                "**/*.css",
-                "**/*.scss",
-                "**/*.sass"
-            ],
-            "options": {
-                "printWidth": 120
-            }
-        }
-    ]
+    "singleAttributePerLine": true,
+    "tabWidth": 2
 }

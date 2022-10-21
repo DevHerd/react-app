@@ -6,6 +6,4 @@ import Timeout from './Timeout/Timeout';
 import Toggle from './Toggle/Toggle';
 
 // eslint-disable-next-line import/prefer-default-export
-export {
-  Counter, Toggle, Modal, Timeout, Card, Grid,
-};
+export { Counter, Toggle, Modal, Timeout, Card, Grid };

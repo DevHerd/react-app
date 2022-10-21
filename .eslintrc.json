@@ -1,40 +1,44 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "extends": [
-        "plugin:react/recommended",
-        "plugin:react-hooks/recommended",
-        "airbnb"
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "airbnb",
+    "plugin:prettier/recommended"
+  ],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "simple-import-sort",
+    "sort-destructure-keys",
+    "prettier"
+  ],
+  "rules": {
+    "react/prop-types": 0,
+    "linebreak-style": 0,
+    "react/jsx-sort-props": [2],
+    "react/jsx-max-props-per-line": [1, { "maximum": 1 }],
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": ["function-declaration", "arrow-function"],
+        "unnamedComponents": "arrow-function"
+      }
     ],
-    "overrides": [
-    ],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "simple-import-sort",
-        "sort-destructure-keys"
-    ],
-    "rules": {
-        "react/prop-types": 0,
-        "linebreak-style": 0,
-        "react/jsx-sort-props": [2],
-        "react/jsx-max-props-per-line": [1, { "maximum": 1}],
-        "react/jsx-props-no-spreading": "off",
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "react/function-component-definition": [
-            "error",
-            {
-                "namedComponents": ["function-declaration", "arrow-function"],
-                "unnamedComponents": "arrow-function"
-            }
-        ],
-        "react/react-in-jsx-scope": "off",
-        "simple-import-sort/imports": "error",
-        "sort-destructure-keys/sort-destructure-keys": [2, { "caseSensitive": false }]
-    }
+    "react/react-in-jsx-scope": "off",
+    "simple-import-sort/imports": "error",
+    "sort-destructure-keys/sort-destructure-keys": [
+      2,
+      { "caseSensitive": false }
+    ]
+  }
 }

@@ -19,7 +19,7 @@ const Timeout = () => {
 
   useEffect(() => {
     setTimeout(setTimeoutValue(timeoutValue + 1), 1000);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -36,22 +36,18 @@ const Timeout = () => {
 
   return (
     <div>
-      <h1>
-        {`Interval Value ${intervalValue}`}
-      </h1>
-      <h1>
-        {`Timeout Value ${timeoutValue}`}
-      </h1>
+      <h1>{`Interval Value ${intervalValue}`}</h1>
+      <h1>{`Timeout Value ${timeoutValue}`}</h1>
       <div className={styles.buttonWrapper}>
         <button
           onClick={timeIntervalHandler}
-          type="button"
+          type='button'
         >
           {toggle ? 'Pause Time' : 'Start Time'}
         </button>
         <button
           onClick={resetTimeHandler}
-          type="button"
+          type='button'
         >
           Reset Time
         </button>

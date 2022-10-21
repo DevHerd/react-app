@@ -9,15 +9,13 @@ const Toggle = () => {
   return (
     <div>
       <h2>Toggle</h2>
-      <div>
-        {`Toggle Status: ${toggle.toString()}`}
-      </div>
+      <div>{`Toggle Status: ${toggle.toString()}`}</div>
       {toggle && <h2>Showing</h2>}
       <div className={styles.buttonWrapper}>
         <button
           className={styles.toggleButton}
           onClick={onClickHandler}
-          type="button"
+          type='button'
         >
           Toggle Button
         </button>

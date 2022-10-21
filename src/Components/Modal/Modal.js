@@ -12,7 +12,7 @@ const Modal = () => {
       <div className={styles.buttonWrapper}>
         <button
           onClick={onClickHandler}
-          type="button"
+          type='button'
         >
           {toggle ? 'Hide' : 'Show'}
         </button>
@@ -23,7 +23,7 @@ const Modal = () => {
           <button
             className={styles.modalClose}
             onClick={closeClickHandler}
-            type="button"
+            type='button'
           >
             Close
           </button>

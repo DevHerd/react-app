@@ -4,7 +4,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import {
-  Card, Counter, Grid, Modal, Timeout, Toggle,
+  Card,
+  Counter,
+  Grid,
+  Modal,
+  Timeout,
+  Toggle,
 } from './Components/layout';
 import reportWebVitals from './reportWebVitals';
 
