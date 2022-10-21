@@ -12,8 +12,7 @@ const Counter = () => {
     <section>
       <h2>Counter</h2>
       <div>
-        I was clicked:
-        {clickCount}
+        {`I was clicked: ${clickCount}`}
       </div>
       <div className={styles.buttonWrapper}>
         <button

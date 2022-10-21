@@ -12,6 +12,8 @@
         {
             "files": [
                 "**/*.css",
+                "**/*.sass",
+                "**/*.scss",
                 "**/*.html"
             ],
             "options": {
@@ -20,7 +22,9 @@
         },
         {
             "files": [
-                "**/*.css"
+                "**/*.css",
+                "**/*.scss",
+                "**/*.sass"
             ],
             "options": {
                 "printWidth": 120

@@ -10,8 +10,7 @@ const Toggle = () => {
     <section>
       <h2>Toggle</h2>
       <div>
-        Toggle Status:
-        {toggle.toString()}
+        {`Toggle Status: ${toggle.toString()}`}
       </div>
       {toggle && <h2>Showing</h2>}
       <div className={styles.buttonWrapper}>

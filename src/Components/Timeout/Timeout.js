@@ -37,20 +37,17 @@ const Timeout = () => {
   return (
     <section>
       <h1>
-        Interval Value
-        {intervalValue}
+        {`Interval Value ${intervalValue}`}
       </h1>
       <h1>
-        Timeout Value
-        {timeoutValue}
+        {`Timeout Value ${timeoutValue}`}
       </h1>
       <div className={styles.buttonWrapper}>
         <button
           onClick={timeIntervalHandler}
           type="button"
         >
-          {toggle ? 'Pause' : 'Start'}
-          Time
+          {toggle ? 'Pause Time' : 'Start Time'}
         </button>
         <button
           onClick={resetTimeHandler}
